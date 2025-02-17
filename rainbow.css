@@ -1,0 +1,34 @@
+
+@keyframes rainbow{
+    100%,
+    0%{
+        color: red;
+    }
+    8%{
+        color:aqua
+    }
+    16% {
+        color:blueviolet
+    }
+    25%{
+        color: brown;
+    }
+    33%{
+        color: chartreuse;
+    }
+    50%{
+        color:palevioletred
+    }
+    80%{
+        color:yellowgreen
+    }
+    100%{
+        color: gold;
+    }
+
+}
+.rainbow-spin {
+    animation : rainbow 4secinfinite linear ;
+    font-size: medium;
+}
+

@@ -1,28 +1,23 @@
-let sum = 0
-let playerobject = {
-    name : "daky",
-    chips : 145
 
+let playerobject = { //object
+    name : "daky", 
+    chips : 145 
 }
  
 let cards= []
-let hasBlackJack = false
+let sum = 0
+let hasBlackJack = false //bollean value
 let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
-let sumEl = document.querySelector("#sum-el")
+let sumEl = document.querySelector("#sum-el") 
 let cardsEl = document.querySelector("#caed-el")
 
 
-//object 
-let player = {
-    name : "dakshata",
-    chips : 145
-}
 let playerEl = document.getElementbyid(player-el)
 playerEl.textcontent = player.name + ":" + "$" + player.chips 
 function getrandomcard(){
-    let randomnumber = Math.floor(Math.random()*13) +1
+let randomnumber = Math.floor(Math.random()*13) +1 
     return randomnumber
     if(randomnumber === 1){
         return 11
@@ -34,8 +29,6 @@ function getrandomcard(){
         }
     }
 
-
-console.log(getrandomcardrandomcard())
 
 function startGame() {
     let firstCard = getrandomnumber()

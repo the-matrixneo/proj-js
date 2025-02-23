@@ -7,3 +7,12 @@ const person = {
     };
     const propertyname = 'name';
     console.log(person[propertyname]);
+
+    let airbnbcastle ={
+        name : "castle",
+        location : true,
+        price : 300,
+        array : [1,2,3,4]
+
+    }
+    console.log(airbnbcastle.name)

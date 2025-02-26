@@ -1,0 +1,44 @@
+
+.password {
+    font-size: large;
+    font-weight: bold;
+    padding: 3px,5px;
+}
+body  {
+  font-family: "Artifika", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(71, 71, 71);
+  color: darkblue;
+  align-content: center;
+  text-align: center;
+}
+#btn {
+  background-color: rgb(38, 104, 235);
+  color: rgb(13, 14, 14);
+  text-shadow: 1px 1px;
+  font-size: large;
+  padding: 13px 18px;
+  margin: 8px 0;
+  border: solid 4px blue;
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+}
+#btn:hover{
+  background-color: rgb(50, 233, 96);
+  color: whitesmoke;
+  border: solid 4px rgb(4, 144, 22);
+}
+.row {
+ display : flex;
+ flex-direction: column;
+  justify-content: center;
+  background-color: rgb(97, 122, 243);
+
+}
+
+
+
+
+

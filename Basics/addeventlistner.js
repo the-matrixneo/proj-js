@@ -1,5 +1,5 @@
 let box= document.getElementById("box");
 box.addEventListener("click", function(){
-    console.log("I want to open the box! when the box is clicked!!")
+    console.log("I want to open the box!!")
 
 })

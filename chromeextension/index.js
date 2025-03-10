@@ -2,6 +2,9 @@ let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
+localStorage.setItem("Leads","ul-el") //localstorage.setItem("key","value")
+localStorage.getItem("Leads") //localstorage.getvalue("key") --string 
+localStorage.clear() //localstorage.clear() to clear the local storage 
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)

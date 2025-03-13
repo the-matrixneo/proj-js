@@ -18,7 +18,7 @@ input {
 button {
   color: antiquewhite;
   background-color:  #5f9341;
-  border: none;
+  border: 1px solid #5f9341;
   font-size: small;
   font-weight: bolder;
   padding: 10px 6px;
@@ -27,7 +27,12 @@ button {
   height: 30px;
     
 }
-ul {
+#delete-btn{
+  background-color: white;
+  color : #5f9341;
+  border : 1px solid #5f9341}
+  
+  ul {
   margin-top: 5px;
 
 }

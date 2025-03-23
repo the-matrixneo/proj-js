@@ -5,12 +5,13 @@
 }
 
 body {
-    background-color:#fb5607;
-    color :#d61166;
-    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#cdb4db;
+    color :#0a0a0a;
+    font-family : "Edu AU VIC WA NT Arrows", cursive;
+    text-align: center;
 }
 nav {
-    background-color:#ffbe0b;
+    background-color:#ffafcc;
     padding : 25px;
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,16 @@ form {
     flex-grow: 1px;
     margin: 13px , 12px ;
 }
+form , button {
+    border: none;
+    padding : 10px , 8px;
+    border-radius : 3px;
+    cursor: pointer;
+    background-color: #a2d2ff;
+}
+button:hover{
+  background-color: #56a6ecc2 ;
+}
 
 @media screen and (max-width:500px) {
     nav{
@@ -37,12 +48,4 @@ form {
         flex-direction: column;
     }
     
-}
-form , button {
-    border: none;
-    padding : 10px , 15px;
-    border-radius : 3px;
-}
-form,button :hover {
-    color: #fb6f92 ;
 }

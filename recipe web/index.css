@@ -38,7 +38,11 @@ form , button {
 button:hover{
   background-color: #56a6ecc2 ;
 }
-
+.recipecontainer {
+    text-align : centre;
+    margin-top : 18px
+   
+}
 @media screen and (max-width:500px) {
     nav{
         flex-direction: column;

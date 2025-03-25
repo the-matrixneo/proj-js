@@ -11,8 +11,14 @@ const fetchrecipes = async (recipes) => {
     const recipeDiv = document.createElement('div') //create a div in js
     recipeDiv.classList.add('recipe') // class in js
     recipeDiv.innerHTML  = `
-    <img src ="${meal.strMealThumb}" alt =  `
+    <img.src ="${meal.strMealThumb}" >
+    <h3>${meal.strMeal}</h3>
+    <p>${meal.strArea}</p>
+    <p>${meal.strCategory}</p>
 
+    `
+
+    recipecontainer.appendChild(recipeDiv)
   })
  } 
 submitbtn.addEventListener('click', function(a){

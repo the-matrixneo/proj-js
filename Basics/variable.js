@@ -7,3 +7,7 @@ console.log(friend[0]);*/
  age++;
  age +=1;
  console.log(age);
+ //
+ const number = 22222
+ let accountState
+ console.log(accountState) //undefined since its not assigned any value 

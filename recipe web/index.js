@@ -3,6 +3,7 @@ const submitbtn = document.querySelector('#search')
 const recipecontainer = document.querySelector(".recipe-container")//for class
 // function to get recipes
 const fetchrecipes = async (recipes) => {
+  recipesContainer.innerHTML = "Fetching recipes..."
   const data = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${recipes}`)
   const response = await data.json()
   

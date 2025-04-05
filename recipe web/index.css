@@ -38,9 +38,17 @@ form , button {
 button:hover{
   background-color: #56a6ecc2 ;
 }
+/*Main section */
+
 .recipecontainer {
     text-align : centre;
-    margin-top : 18px
+    margin-top : 18px;
+    display : grid;
+    grid-template-columns : repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    width : 80%;
+    
+
    
 }
 @media screen and (max-width:500px) {

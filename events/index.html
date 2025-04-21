@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Listner</title>
+  </head>
+  <body>
+    <ul id="images">
+      <h1>Monument Images - europe !</h1>
+      <li>
+        <img
+          src="https://cdn.pixabay.com/photo/2017/07/05/18/54/harvard-university-2475661_1280.jpg"
+          width="50%"
+          height="50%"
+          alt="church"
+          id="one"
+        />
+      </li>
+      <li>
+        <img
+          src="https://cdn.pixabay.com/photo/2023/02/03/14/32/building-7765288_1280.jpg"
+          width="50%"
+          ,
+          height="50%"
+          alt="building"
+          id="two"
+        />
+      </li>
+    </ul>
+    <script>
+      //   document.getElementById("images").addEventListener(
+      //     "click",
+      //     function (e) {
+      //       console.log("cilcked outside");
+      //     },
+      //     false //bubling
+      //   );
+
+      //   document.getElementById("one").addEventListener(
+      //     "click",
+      //     function (e) {
+      //       // alert("church clicked");
+      //       console.log("owl clicked");
+      //       e.stopPropagation;
+      //     },
+
+      //     false // event propogation
+      //   );
+      //type
+      //timestamp
+      //defaultprevented
+      //target , toElement , srcElement , currentTarget
+      // clientx/y , screen x/y , alt key , keycode
+      document.querySelector("#images").addEventListener("click", function (e) {
+        // console.log(e.target.parentNode);
+        console.log(e.targert.tagName);
+        if (e.target.tagName === "IMG") {
+          let removeit = e.target.parentNode;
+          removeit.remove();
+        }
+      });
+    </script>
+  </body>
+</html>

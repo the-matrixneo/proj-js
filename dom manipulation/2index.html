@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document object model -2</title>
+  </head>
+  <body>
+    <h1 id="title" class="heading">Dom learning</h1>
+  </body>
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 100 + 1);
+    div.setAttribute("title", "dom");
+    div.style.backgroundColor = "red";
+    const add = document.createTextNode("learn");
+    div.appendChild(add);
+    document.appendChild(div);
+  </script>
+</html>

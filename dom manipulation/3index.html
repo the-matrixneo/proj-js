@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document object model - 3</title>
+  </head>
+  <body style="background-color: rgb(38, 36, 61)" color="white">
+    <h1 id="title" class="heading">Dom learning</h1>
+    <ul class="languages">
+      <li>js</li>
+      <li>swift</li>
+      <li>kotlin</li>
+      <li>python</li>
+    </ul>
+  </body>
+  <script>
+    function addlang(lang) {
+      const li = document.createElement("li");
+      li.innerHTML = `${lang}`;
+      document.querySelector(".languages").appendChild(li);
+    }
+    addlang("c#");
+    //optimized way of inserting a new value
+    function addlanguage(lang) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(lang));
+      document.querySelector(".languages").appendChild(li);
+    }
+    addlanguage("golang");
+    //edit
+    const secondlang = document.querySelector("li:nth-child(2)");
+    const newlang = document.createElement("li");
+    newlang.textContent = "rust";
+    secondlang.replacewith(newlang);
+    // remove
+    const thirdlang = document.querySelector("li:last-child");
+    thirdlang.remove();
+  </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<body>
+        <h1>PROJECT - 2</h1>
+        <button id = "stop-btn">STOP</button>
+        <button id = "start-btn">START</button>
+    </body>
+<script>
+    
+   
+    document.querySelector('#start').addEventListener('click' , () => {
+        const sayDate = function (str){
+            console.log(str , Date.now());
+       }
+    })
+
+ 
+ document.querySelector('#stop').addEventListener('click',()=> {
+    clearInterval(sayDate)
+ })
+            
+</script>
+</html>
